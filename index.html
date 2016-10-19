@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Payment</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>    
+    <div class="row">
+      <div class="large-8 medium-8 columns">               
+        <div class="personal-information">
+          <h1>Payment Information</h1>
+        </div>
+        <form>          
+          <div class="row">
+            <div class="large-6 medium-6 columns">
+              <label>Nome</label>
+              <input name="first-name" id="first-name" type="text" placeholder="Nome" />
+            </div>
+            <div class="large-6 medium-6 columns">
+              <label>Sobrenome</label>
+              <input name="last-name" id="last-name" type="text" placeholder="Sobrenome" />
+            </div>
+            <div class="large-12 columns">
+              <label>Número do cartão</label>
+              <input name="number" type="text" placeholder="Número do cartão" required="required" />
+            </div>
+            <div class="large-6 medium-6 columns">
+              <label>MM / YY</label>
+              <input name="expiry" type="text" placeholder="MM / YY" />
+            </div>
+            <div class="large-6 medium-6 columns">
+              <label>CVC</label>
+              <input name="cvc" id="last-name" type="text" placeholder="CVC" />
+            </div>        
+          </div>
+          <hr>
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="card-wrapper"></div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="row collapse">
+                <label>E-mail</label>
+                <div class="input-group">
+                  <input type="email" placeholder="Digite seu e-mail" class="input-group-field" />
+                  <span class="input-group-label">.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="large-5 columns">
+              <label>CEP</label>
+              <input id="cep" type="text" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="Coloque seu cep" />
+            </div>
+            <div class="large-12 columns">
+              <label>Endereço</label>
+              <input id="end" type="text" placeholder="Endereço" />
+            </div>
+            <div class="large-12 columns">
+              <button type="submit" class="button expanded">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/card.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/jquery.card.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
